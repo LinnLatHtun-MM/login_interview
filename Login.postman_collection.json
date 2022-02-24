@@ -1,0 +1,106 @@
+{
+	"info": {
+		"_postman_id": "55a1617e-0405-4032-91de-886c2e6a2cb0",
+		"name": "Login",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Register",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"linn lat htun\",\r\n    \"email\": \"linnlathtun279@gmail.com\",\r\n    \"password\": \"Admin123@\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8081/loginApi/register",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"loginApi",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{ \r\n    \"name\":\"linn lat htun\",\r\n    \"email\": \"linnlathtun279@gmail.com\",\r\n    \"password\":\"Admin123@\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8081/loginApi/login?email=linnlathtun279@gmail.com&password=Admin123@",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"loginApi",
+						"login"
+					],
+					"query": [
+						{
+							"key": "email",
+							"value": "linnlathtun279@gmail.com"
+						},
+						{
+							"key": "password",
+							"value": "Admin123@"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{ \r\n    \"id\":1,\r\n    \"name\":\"linn lat tun\",\r\n    \"email\": \"linnlathtun279@gmail.com\",\r\n    \"password\":\"Admin123@\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8081/loginApi/update",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"loginApi",
+						"update"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
